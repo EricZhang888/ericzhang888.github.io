@@ -28,8 +28,8 @@ defaults:
 paginate: 20
 
 #### Site
-title : Eric Zhang Blog
-tagline: A man worked in IT industry for more than 7 years
+title : 张爱强的博客/Eric Zhang's Blog
+tagline: A man like sharing
 assets: /assets
 url:
 baseurl:
@@ -90,7 +90,7 @@ share_to: true #enable share-to buttons if true
 
 #### Author information
 author:
-  name: zaqweb      ## e.g. wuchong Author name
+  name: zaqweb      ## e.g. Author name
   intro_line1: 与技术相比，演讲、沟通、方案能力才是技术人员脱颖而出的关键     ## your introduction on the bottom of the page
   intro_line2:  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
