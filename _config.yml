@@ -121,7 +121,7 @@ links:
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong      your duoshuo short name.       website: http://duoshuo.com
-disqus_shortname: zaqweb    ## e.g. wuchong      your disqus short name.        website: http://disqus.com
+disqus_shortname: #zaqweb    ## e.g. wuchong      your disqus short name.        website: http://disqus.com
 hypercomments_id:     ## e.g. 91510        your hypercomments widget id.  website: http://hypercomments.com
 yungentie_productkey: ## your netease yungentie product key.              website: https://gentie.163.com
 ## set only one of them
@@ -135,8 +135,8 @@ jiathis:
 
 #### Analytics
 google_analytics:
-  enable: true
-  id: UA-105250751-1 ## e.g. UA-46321946-2 your google analytics ID.
+  enable: false
+  id: #UA-105250751-1 ## e.g. UA-46321946-2 your google analytics ID.
   site:     ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
