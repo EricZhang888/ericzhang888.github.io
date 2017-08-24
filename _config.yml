@@ -97,10 +97,10 @@ author:
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
+  zhihu: zaqweb     ## e.g. jark  for http://www.zhihu.com/people/zaqweb
   email: zaqweb@live.com    ## e.g. imjark@gmail.com
   twitter: zaqweb   ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:  zaqweb   ## e.g. wuchong for https://github.com/wuchong
+  github:  zaqweb   ## e.g. wuchong for https://github.com/zaqweb
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin: zaqweb ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
@@ -135,9 +135,9 @@ jiathis:
 
 #### Analytics
 google_analytics:
-  enable: false
-  id:        ## e.g. UA-46321946-2 your google analytics ID.
-  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
+  enable: true
+  id: UA-105250751-1 ## e.g. UA-46321946-2 your google analytics ID.
+  site:     ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
