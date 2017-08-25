@@ -1,0 +1,63 @@
+@media only screen and (min-width: 780px) {
+	.side-by-side {
+		width: 100%;
+		margin: 2rem 0 0 0;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.side-by-side {
+		width: 100%;
+		margin: 4rem 0;
+	}
+}
+
+.side-by-side > .toleft, .side-by-side > .toright {
+	display: inline-block;
+	width: 47.5%;
+}
+
+@media only screen and (max-width: 780px) {
+	.side-by-side > .toleft img, .side-by-side > .toright img {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+	.side-by-side > .toleft {
+		margin-right: 2%;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.side-by-side > .toleft {
+		width: 100%;
+		margin: 0 0 4rem 0;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+	.side-by-side > .toright {
+		margin-left: 2%;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.side-by-side > .toright {
+		width: 100%;
+		margin: 0 0 4rem 0;
+	}
+}
+
+.side-by-side > .toleft > p, .side-by-side > .toright > p {
+	margin: 0 0 4rem 0;
+}
+
+@media only screen and (max-width: 780px) {
+	.side-by-side > .toleft > p, .side-by-side > .toright > p {
+		margin: 0;
+	}
+}
