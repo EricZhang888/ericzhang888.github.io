@@ -122,6 +122,9 @@ links:
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong      your duoshuo short name.       website: http://duoshuo.com
 disqus_shortname: #zaqweb    ## e.g. wuchong      your disqus short name.        website: http://disqus.com
+gitment:
+  id: 071fc9d0f28a6bfca1e7
+  secret: ed3625451b20779ffd740687c0906c85045c803f
 hypercomments_id:     ## e.g. 91510        your hypercomments widget id.  website: http://hypercomments.com
 yungentie_productkey: ## your netease yungentie product key.              website: https://gentie.163.com
 ## set only one of them
