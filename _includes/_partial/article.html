@@ -2,7 +2,7 @@
     {% if page.layout == 'photo' and item.photos and item.photos | size != 0 %}
 	    {% include _partial/post/gallery.html %}
     {% endif %}
-    <article class="post-expand {{ item.layout }}" itemprop="articleBody"> 
+    <article class="post-expand {{ item.layout }}" itemprop="articleBody">
         {% include _partial/post/header.html %}
     <div class="article-content">
         {% if item.excerpt and index %}
@@ -10,7 +10,7 @@
         {% else %}
         {{ item.content }}
         {% endif %}
-        
+
         <p class="article-more-link">
           {% if item.excerpt and index and site.index.excerpt_link %}
             <a href="{{ site.baseurl }}{{ item.url }}#more">{{ site.index.excerpt_link }}</a>
@@ -23,7 +23,7 @@
 {% else %}
 <section class="post" itemscope itemprop="blogitem">
   {% if item.link %}
-    <a href="{{ item.link }}" target="_blank"> 
+    <a href="{{ item.link }}" target="_blank">
   {% else %}
     <a href="{{ site.baseurl }}{{ item.url }}" title="{{ item.title }}" itemprop="url">
   {% endif %}
@@ -41,6 +41,4 @@
   </a>
 </section>
 {% endif %}
-
-
-
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
