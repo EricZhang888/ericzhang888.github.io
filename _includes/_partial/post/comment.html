@@ -10,27 +10,7 @@
 </section>
 {% elsif site.gitment.id %}
 <section id="comments" class="comment">
-  <div id="gitment">
-    <script>
-			const gitment = new Gitment({
-			id: 'zaqweb', // optional
-			owner: 'zaqweb',
-			repo: 'zaqweb.github.io',
-			oauth: {
-				client_id: '{{ site.gitment.id }}',
-				client_secret: '{{ site.gitment.secret }}',
-			},
-			// ...
-			// For more available options, check out the documentation below
-			})
-
-			gitment.render('comments')
-			// or
-			// gitment.render(document.getElementById('comments'))
-			// or
-			// document.body.appendChild(gitment.render())
-		</script>
-  </div>
+  
 </section>
 {% elsif site.hypercomments_id %}
 <section id="comments" class="comment">

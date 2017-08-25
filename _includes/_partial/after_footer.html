@@ -87,6 +87,23 @@ $(document).ready(function(){
     showSpeed: 0
   });
 });
+const gitment = new Gitment({
+id: 'zaqweb', // optional
+owner: 'zaqweb',
+repo: 'zaqweb.github.io',
+oauth: {
+  client_id: '{{ site.gitment.id }}',
+  client_secret: '{{ site.gitment.secret }}',
+},
+// ...
+// For more available options, check out the documentation below
+})
+
+gitment.render('comments')
+// or
+// gitment.render(document.getElementById('comments'))
+// or
+// document.body.appendChild(gitment.render())
 </script>
 {% endif %}
 
