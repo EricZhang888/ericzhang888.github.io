@@ -39,8 +39,9 @@ language: en    ## blog site languages: en, zh-CN, zh-TW, de
 
 #### Menu
 menu:
-  Home: /
-  Blog: /blog
+  Blog: /
+  Music: /music
+  Book: /book
   Project: /project
   Archives: /archives
   About: /about
@@ -91,8 +92,8 @@ share_to: true #enable share-to buttons if true
 #### Author information
 author:
   name: zaqweb      ## e.g. Author name
-  intro_line1: 与技术相比，演讲、沟通、方案能力才是技术人员脱颖而出的关键     ## your introduction on the bottom of the page
-  intro_line2:  ## the 2nd line
+  intro_line1: 我相信演讲，沟通，写作能让你的技术生涯更加丰富多彩     ## your introduction on the bottom of the page
+  intro_line2: I trust that presentation, negotiation and writing could bring you a varied technical career ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
