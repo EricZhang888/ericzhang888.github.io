@@ -15,6 +15,10 @@ markdown: kramdown
 kramdown:
     input: GFM
 
+
+collections:
+  books:
+    output: true
 #### Default Attributes
 defaults:
   -
