@@ -18,6 +18,7 @@ kramdown:
 
 collections:
   books:
+    layout: "default"
     output: true
 #### Default Attributes
 defaults:

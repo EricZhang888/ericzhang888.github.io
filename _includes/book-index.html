@@ -1,9 +1,9 @@
-<div id="main">
+<div id="main" style="width:100%;">
 {% for post in site.books %}
   {% assign item = post %}
   {% assign index = true %}
   {% assign desc = true %}
-  {% include _partial/article.html %}
+  {% include _partial/book.html %}
 {% endfor %}
 
 </div>

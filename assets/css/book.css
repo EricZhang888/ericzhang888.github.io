@@ -1,0 +1,84 @@
+
+.book_found {
+	height: 1227px
+}
+
+.book_found .mt {
+	padding-bottom: 10px;
+	height: 25px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #333
+}
+
+.book_found .list {
+	*float: left;
+	margin-left: -10px;
+	padding-top: 3px
+}
+
+.book_found .p-item {
+	float: left;
+	margin: 0 0 10px 10px;
+	width: 328px;
+	height: 399px;
+	background: #fff;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	transition: all .2s linear;
+	text-align: center
+}
+
+.book_found .p-item:hover {
+	-webkit-transform: translate3d(0,-2px,0);
+	-moz-transform: translate3d(0,-2px,0);
+	transform: translate3d(0,-2px,0)
+}
+
+.book_found .p-img {
+	padding: 20px 0;
+	height: 211px
+}
+
+.book_found .p-img img {
+	display: block;
+	margin: 0 auto;
+	width: 211px;
+	height: 211px
+}
+
+.book_found .p-name,.book_found .p-num,.book_found .p-sub {
+	padding: 0 22px;
+	overflow: hidden
+}
+
+.book_found .p-name {
+	margin-bottom: 19px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 24px;
+	color: #0f172e
+}
+
+.book_found .p-sub {
+	margin-bottom: 20px;
+	height: 49px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #999
+}
+
+.book_found .p-num {
+	color: #0f172e
+}
+
+.book_found .p-num i {
+	padding: 0 15px;
+	margin-right: 5px
+}
+
+
+.mc {
+	overflow: hidden;
+	zoom: 1
+}
