@@ -27,6 +27,22 @@
         {% include _partial/after_footer.html %}
       </body>
      </html>
+ {% elsif page.layout == 'book-detail' %}
+     {% include _partial/book_head.html %}
+       <body>
+         <header>
+           {% include _partial/header.html %}
+         </header>
+         <div id="container">
+           {{ content }}
+           {% assign item = page %}
+           {% assign table = true %}
+           {% include _partial/book-detail-sidebar.html %}
+         </div>
+         <footer>{% include _partial/footer.html %}</footer>
+         {% include _partial/after_footer.html %}
+       </body>
+      </html>
 {% elsif page.layout == 'page' %}
     {% include _partial/head.html %}
       <body>
