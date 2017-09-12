@@ -2,84 +2,25 @@
     {% if page.layout == 'photo' and item.photos and item.photos | size != 0 %}
 	    {% include _partial/post/gallery.html %}
     {% endif %}
-    <div class="book_found w m" id="book_found_25" data-id="book_found_25" data-elevator="true" data-tpl="book_found_tpl" style="height: auto;">
-    <div class="mc">
-     <ul class="list" data-channel="3334" data-floor="25">
-      <li class="p-item" clstag="channel|keycount|3334|25_item_1063190"><a href="//fxhh.jd.com/detail.html?id=1063190" target="_blank">
+
+      <li class="p-item" clstag="channel|keycount|3334|25_item_1063190"><a href="{{ site.baseurl }}{{ item.url }}" target="_blank">
         <div class="p-img">
          <img src="//m.360buyimg.com/mobilecms/jfs/t5608/139/5475352011/32253/34303dcf/5961a41cN5fd8fc33.jpg!q70.jpg" width="200" height="200" />
         </div>
         <div class="p-name">
-         大师们的写作课
+         {{ item.title }}
         </div>
         <div class="p-sub">
-         本书让你通过读就能迅速地提升写作能力，从48位文学大师的笔下，找到关于写作的密码。你也可以成为一个真正会写的人，写出你宝藏一样丰富的内心，写出你强大的影响力！
+         {{ item.sub }}
         </div>
         <div class="p-num">
-         <i></i>
-         <em>7</em>
-        </div></a></li>
-      <li class="p-item" clstag="channel|keycount|3334|25_item_872476"><a href="//fxhh.jd.com/detail.html?id=872476" target="_blank">
-        <div class="p-img">
-         <img src="//m.360buyimg.com/mobilecms/jfs/t5104/180/739960524/54587/e1798704/590591a1N3e5728f6.jpg!q70.jpg" width="200" height="200" />
-        </div>
-        <div class="p-name">
-         大唐李白 将进酒
-        </div>
-        <div class="p-sub">
-         本书带你进入李白无法言语的爱情与婚姻。书中读者将看到一个面临成家压力的诗人，以贱商之子高攀宗室之女，这背后种种惊人的人情世相和真情哀婉。
-        </div>
-        <div class="p-num">
-         <i></i>
-         <em>0</em>
-        </div></a></li>
-      <li class="p-item" clstag="channel|keycount|3334|25_item_1141057"><a href="//fxhh.jd.com/detail.html?id=1141057" target="_blank">
-        <div class="p-img">
-         <img src="//m.360buyimg.com/mobilecms/jfs/t6013/229/8715413209/19776/da283ee7/598d0468Nfd50108c.jpg!q70.jpg" width="200" height="200" />
-        </div>
-        <div class="p-name">
-         《八次危机》
-        </div>
-        <div class="p-sub">
-         书中作者以详实的数据、生动的图文带我们回顾了中国的八次危机及其软着陆的历史轨迹。这也是作者穿行在乡间小路上的多年农村调研经历的积淀。
-        </div>
-        <div class="p-num">
-         <i></i>
-         <em>2</em>
-        </div></a></li>
-        <li class="p-item" clstag="channel|keycount|3334|25_item_1141057"><a href="//fxhh.jd.com/detail.html?id=1141057" target="_blank">
-          <div class="p-img">
-           <img src="//m.360buyimg.com/mobilecms/jfs/t6013/229/8715413209/19776/da283ee7/598d0468Nfd50108c.jpg!q70.jpg" width="200" height="200" />
-          </div>
-          <div class="p-name">
-           《八次危机》
-          </div>
-          <div class="p-sub">
-           书中作者以详实的数据、生动的图文带我们回顾了中国的八次危机及其软着陆的历史轨迹。这也是作者穿行在乡间小路上的多年农村调研经历的积淀。
-          </div>
-          <div class="p-num">
-           <i></i>
-           <em>2</em>
-          </div></a></li>
-      <li class="p-item" clstag="channel|keycount|3334|25_item_1127221"><a href="//fxhh.jd.com/detail.html?id=1127221" target="_blank">
-        <div class="p-img">
-         <img src="//m.360buyimg.com/mobilecms/jfs/t5686/231/9408237007/36172/b7f72a1f/59857083Na113faef.jpg!q70.jpg" width="200" height="200" />
-        </div>
-        <div class="p-name">
-         精益创业家
-        </div>
-        <div class="p-sub">
-         书中把精益创业方法中强大的顾客洞察力、快速实验法和易执行数据结合起来，赋予个人、公司和整个团队以力量，开拓他们的视野、解决各类问题、并以互联网的速度创造价值。
-        </div>
-        <div class="p-num">
-         <i></i>
-         <em>5</em>
+         <em>初次阅读：{{ item.date | date: "%F" }} &nbsp;&nbsp; 推荐指数：<em id="start"></em>
         </div></a></li>
       <li class="clr"></li>
-     </ul>
-    </div>
-  </div>
 
+      <script>
+      $('#star').raty({ readOnly: true, score: 3 });
+      </script>
 
 {% else %}
 <section class="post" itemscope itemprop="blogitem">

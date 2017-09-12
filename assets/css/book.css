@@ -77,6 +77,10 @@
 	margin-right: 5px
 }
 
+.book_found em {
+	font-size: 12px
+}
+
 
 .mc {
 	overflow: hidden;

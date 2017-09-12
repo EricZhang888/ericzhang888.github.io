@@ -6,7 +6,8 @@ categories:
 tags:
 - 管理
 comments: true
-layout: book
+layout: default
+sub: 无意中在京东看到这本书
 ---
 
 init

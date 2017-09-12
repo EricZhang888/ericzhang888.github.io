@@ -1,9 +1,14 @@
 <div id="main" style="width:100%;">
-{% for post in site.books %}
-  {% assign item = post %}
-  {% assign index = true %}
-  {% assign desc = true %}
-  {% include _partial/book.html %}
-{% endfor %}
-
+  <div class="book_found w m" id="book_found_25" data-id="book_found_25" data-elevator="true" data-tpl="book_found_tpl" style="height: auto;">
+    <div class="mc">
+      <ul class="list" data-channel="3334" data-floor="25">
+        {% for post in site.books %}
+          {% assign item = post %}
+          {% assign index = true %}
+          {% assign desc = true %}
+          {% include _partial/book.html %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
