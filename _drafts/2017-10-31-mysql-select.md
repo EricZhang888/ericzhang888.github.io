@@ -20,6 +20,7 @@ comments: true
 # Where条件优化
 MySQL对WHERE条件是有自动优化的，并且对SELECT、DELETE、UPDATE都生效。所以建议你把精力放在SQL语句的整洁性和易读性方面，优化的工作留给MYSQL。
  1. 去除没有必要的括号结构
+
  ```MySQL
  ((a AND b) AND c OR (((a AND b) AND (c AND d))))
 -> (a AND b AND c) OR (a AND b AND c AND d)
