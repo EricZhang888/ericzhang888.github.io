@@ -1,5 +1,5 @@
 ---
-title: MySQL 查询性能优化基础
+title: MySQL 单表查询学优化
 date: 2017-10-31 22:30:09
 categories:
 - MySQL
