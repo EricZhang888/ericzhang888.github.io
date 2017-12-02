@@ -2,6 +2,7 @@
 title: Spring boot(二) 访问数据库(Data Access)
 date: 2017-9-28 8:30:09
 categories:
+- Java
 - Spring
 comments: true
 ---
