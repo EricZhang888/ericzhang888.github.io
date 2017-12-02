@@ -61,6 +61,7 @@ XML配置样例：
 事实上本章不应该讨论这个话题，应为文章关注的是Spring Framework的核心机制，而非具体操作。值得提及的有几点内容：
 
 1. 结构化你的XML配置文件
+
 ```xml
 <beans>
     <import resource="services.xml"/>
