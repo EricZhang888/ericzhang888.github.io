@@ -72,9 +72,8 @@ XML配置样例：
 </beans>
 ```
 
-2. p-namespace
-
-  常规写法：
+2. p-namespace    
+常规写法：
 
 ```xml
 <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -88,21 +87,21 @@ XML配置样例：
 
 利用p-namespace简化xml结构，增强可读性。需要注意的是增加```xmlns:p="http://www.springframework.org/schema/p``` 命名空间
 
-  ```xml
-  <beans xmlns="http://www.springframework.org/schema/beans"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:p="http://www.springframework.org/schema/p"
-      xsi:schemaLocation="http://www.springframework.org/schema/beans
-      http://www.springframework.org/schema/beans/spring-beans.xsd">
+```xml
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-      <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource"
-          destroy-method="close"
-          p:driverClassName="com.mysql.jdbc.Driver"
-          p:url="jdbc:mysql://localhost:3306/mydb"
-          p:username="root"
-          p:password="masterkaoli"/>
-  </beans>
-  ```
+    <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+        destroy-method="close"
+        p:driverClassName="com.mysql.jdbc.Driver"
+        p:url="jdbc:mysql://localhost:3306/mydb"
+        p:username="root"
+        p:password="masterkaoli"/>
+</beans>
+```
 
 ## 使用XMl Or 注解
 随着```Spring boot```的出现，构建基于Spring的项目变得更为简单，大量注解被使用，不再看到xml的身影；甚至是配置文件也从properties变成了yml。
