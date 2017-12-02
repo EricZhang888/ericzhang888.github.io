@@ -36,6 +36,7 @@ comments: true
 复杂点讲，要了解容器是如果创建，维护，销毁Bean需要深入容器机制的细节，如```Bean生命周期```, ```DI实现机制```,```集合值配置```,```集合值合并```等。
 
 XML配置样例：
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -70,9 +71,11 @@ XML配置样例：
     <bean id="bean2" class="..."/>
 </beans>
 ```
+
 2. p-namespace
 
   常规写法：
+
 ```xml
 <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
     <!-- results in a setDriverClassName(String) call -->
@@ -82,6 +85,7 @@ XML配置样例：
     <property name="password" value="masterkaoli"/>
 </bean>
 ```
+
 利用p-namespace简化xml结构，增强可读性。需要注意的是增加```xmlns:p="http://www.springframework.org/schema/p``` 命名空间
 
   ```xml
