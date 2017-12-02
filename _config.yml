@@ -20,6 +20,7 @@ collections:
   books:
     layout: "default"
     output: true
+    desc: true
 #### Default Attributes
 defaults:
   -
