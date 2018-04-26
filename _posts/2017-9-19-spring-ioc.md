@@ -1,5 +1,5 @@
 ---
-title: Spring 核心之IOC
+title: Spring 核心之IOC容器
 date: 2017-12-2 17:30:09
 categories:
 - Spring
@@ -31,9 +31,12 @@ comments: true
 
 ## IoC容器如何创建Bean？
 ![](/assets/img/spring/container-magic.png)
-简单的回答就是IoC容器根据配置（XML或注解）来创建POJOs，Bean在创建后被维护在Spring容器中随时可被使用，同时Spring容器负责维护Bean的生命周期。
 
-复杂点讲，要了解容器是如果创建，维护，销毁Bean需要深入容器机制的细节，如```Bean生命周期```, ```DI实现机制```,```集合值配置```,```集合值合并```等。
+简单的回答就是IoC容器根据配置（XML或注解）来创建Bean，Bean在创建后被维护在Spring容器中随时可被使用，同时Spring容器负责维护Bean的生命周期。
+
+复杂点讲，需要说明容器创建，维护，销毁Bean的机制性细节，如```Bean生命周期```, ```DI实现机制```,```集合值配置```,```集合值合并```等。请参考阅读Spring IoC容器特性详解
+
+这里说的配置包括纯XML,基于注解,基于Java的三种配置Spring方式，Spring并不强迫我们使用哪一种，甚至是支持混合使用这几种配置的。由于XML的说明性强于注解，所以官方大部分配置细节都采用XML结构讲解。
 
 XML配置样例：
 
@@ -60,7 +63,7 @@ XML配置样例：
 ## 如何编写XML配置
 事实上本章不应该讨论这个话题，应为文章关注的是Spring Framework的核心机制，而非具体操作。值得提及的有几点内容：
 
-1. 结构化你的XML配置文件
+- 结构化你的XML配置文件
 
 ```xml
 <beans>
@@ -73,7 +76,8 @@ XML配置样例：
 </beans>
 ```
 
-2. p-namespace    
+- 使用p-namespace   
+
 常规写法：
 
 ```xml
